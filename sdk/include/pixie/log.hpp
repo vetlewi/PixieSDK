@@ -70,7 +70,7 @@ public:
     ~log();
 
     template<typename T>
-    std::ostringstream& operator<<(T item) {
+    std::ostringstream& operator<<(const T &item) {
         output << item;
         return output;
     }
